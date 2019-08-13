@@ -1,0 +1,199 @@
+/*Reset*/
+body, h1, h2, p, ul, li, a {margin: 0;padding: 0;}body {font-family: 'IBM Plex Sans', sans-serif;}ul {list-style: none;}a{text-decoration: none;}img{display: block;max-width: 100%;}*{box-sizing: border-box;}
+/*Menu*/
+.menu-bg {
+  background: #F2F2F2;
+}
+.menu {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu a {
+  color: black;
+}
+.menu-logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.menu-nav ul {
+  flex: 1; 
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-nav a {
+  font-size: 1em;
+  display: block;
+  padding: 10px;
+  font-weight: bold;
+}
+.btn button {
+  width: 120px;
+  height: 40px;
+  background: #4455DD;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*Introdução*/
+.introducao{
+  display: flex;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 60px 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.introducao-text {
+  flex: 1 1 200px;
+  font-size: 3em;
+  line-height: 1;
+}
+.introducao-img {
+  flex: 1 1 260px;
+  max-width: 500px;
+  min-width: 36%;
+}
+@media (min-width: 800px) {
+  .introducao-img {
+    max-width: 36%;
+    min-width: 36%;
+  }
+}
+.introducao-text button {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 70px;
+  border:0;
+  width: 260px;
+  min-height: 56px;
+  color: white;
+  font-size: 0.5em;
+  background: #4455DD;
+  border-radius: 4px;
+}
+/*Produtos*/
+.produtos {
+  background: #4455DD;
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+.produtos-item {
+  flex: 1 1 270px;
+  max-width: 270px;
+  background: white;
+  margin: 20px;
+  border-radius: 4px;
+  text-align: left;
+  padding: 30px;
+}
+.produtos-item h1 {
+  font-size: 1.25em;
+  color: black;
+  font-weight: bold;
+}
+.produtos-item h2 {
+  font-size: 1.25em;
+  color: #4455DD;
+  font-weight: bold;
+}
+.produtos-item h2::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 10px 10px 10px 0;
+  background: grey;
+}
+.produtos-item p {
+  font-size: 1.25em;
+  color: grey;
+}
+.produtos-item a {
+  padding: 10px;
+  display: flex;
+  margin-left: -2px;
+  background: #4455DD;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.produtos-item a::after {
+  content: '+';
+  display:inline;
+  margin: 0 110px;
+}
+/*Sobre*/
+.sobre {
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 70px auto;
+
+}
+.sobre-item {
+  text-align: center;
+  flex: 1;
+  padding: 20px 20px;
+
+}
+.sobre-item h2 {
+  padding-top: 19px;  
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.sobre-item p {
+  padding: 10px;
+}
+.sobre-item img {
+  margin: 0 auto;
+  max-width: 66%;
+  min-width: 60%;
+}
+.titulo {
+  text-align: center;
+  margin: 70px 0;
+  font-size: 2.62em;
+}
+/*Depoimento*/
+.depoimento {
+  display: flex;
+}
+.depo-item img {
+  width: 100%;
+  position: absolute;
+}
+.label-teste {
+  margin: 500px 524px 85px 93px;
+  position: absolute;
+  font-size: 42px;
+  color: white;
+  font-weight: bold;
+}
+.label-teste::after {
+  margin: 25px 10px;
+  font-size: 18px;
+  color: rgb(177, 177, 177);
+  content: 'Gabriela Marques';
+  display: block;
+}
+/*Cadastro */
+.cadastro {
+  display: flex;
+  max-width: 100%
+}
